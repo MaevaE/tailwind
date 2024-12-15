@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire - Se connecter / S'inscrire</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/dist/styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .zoom:active {
+      transform: scale(1.2); 
+      transition: transform 0.2s ease-in-out; 
+  }
+  @media (max-width: 594px) {
+          .xs\: {
+            display: none !important;
+          }
+        }
+     </style>
+</head>
+<body class="bg-black m-5  ml-40 pl-10">
+
+  <div class="flex  p-1">
+    <div class="bg-center " >
+      <img src="images/img1.png" alt="" >
+  </div>
+
+  <div class=" bg-gray-200 pr-70 flex-column w-200">
+      <div class="text-center p-10 pb-5 pt-2 ">
+      <ul class="flex List-none pl-10 pr-10">
+          <a href="connection.html" class=" w-60 h-10 p-1 no-underline border border-gray-300 bg-gray-400  hover:text-white  hover:bg-blue-500 focus:outline-none focus:border-blue-500 transition-colors"> <li><span class="  group-hover:text-whitesmoke p-4">se connecter</span></li></a>
+          <a href="monformulaire.html" class="p-1 pr-8 no-underline border border-blue-400 bg-blue-400 w-60 rounded h-10   hover:text-white hover:bg-blue-500 focus:outline-none focus:border-blue-500 transition-color" >  <li><span class=" group-hover:text-whitesmoke p-4">S'incrire</span></li></a>
+      </ul>
+      </div>
+      <form action="" class="pl-0">
+          <div class="flex pl-0 pb-5 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2  mr-0">
+              
+                  <i class="fa-solid fa-user-plus" ></i>
+              </div>
+          <input type="test" id="test" placeholder="nom utilisateur" class="  w-80 h-14 ">
+            </div>
+      
+
+          <div class="flex pl-0 pb-9 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2 ">
+                  <i class="fa-solid fa-at"></i>
+              </div>
+              <input type="Email" id="Email" placeholder="Email" class=" w-80 h-14 ">
+          </div>
+
+          <div class="flex pl-0 pb-9 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2  ">
+                  <i class="fa-regular fa-user"></i>
+              </div>
+              <input type="test" id="test" placeholder="Nom complet" class=" w-80 h-14 ">
+          </div>
+
+          <div class="flex pl-0 pb-9 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2 ">
+                  <i class="fa-solid fa-phone"></i>
+              </div>
+              <input type="test" id="number" placeholder="Numero de telephone"  class=" w-80 h-14 ">
+          </div>
+
+          <div class="flex pl-0 pb-3 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2 ">
+                  <i class="fa-solid fa-key"></i>
+              </div>
+              <input type="password" id="password" placeholder="....."   class=" w-80 h-14 ">
+              <div class="bg-white w-14 h-14  text-center  p-2 pl-16"
+                >
+                  <i class="fa-solid fa-eye"></i>
+              </div>
+              
+          </div>
+
+      </form>
+
+      <a href="" class="no-underline hover:zoom"> <div class="ml-20 w-70 h-10 bg-blue-500 text-center  border rounded-full p-1 mr-10">
+          <Span class="text-white">S'INSCRIRE</Span>
+      </div></a>
+
+  </div>
+  </div>
+</body>
+</html>
+  
+  

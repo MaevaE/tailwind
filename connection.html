@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire - Se connecter / S'inscrire</title>
+  <!-- Lien vers le CDN de Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/dist/styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .color{
+     background-color:  rgb(48, 46, 46);
+    }
+    
+     /* Définir un breakpoint personnalisé pour les écrans <= 460px */
+     @media (max-width: 594px) {
+       .xs\:hidden {
+         display: none !important;
+       }
+       .xs\:block {
+         display: block !important;
+         
+       }
+       .xs\:ma {
+         height: 300% !important;
+         
+       }
+       .xs\:mab{
+         margin-top: 1550px !important;
+       }
+       .xs\:ml {
+         margin-left: 190px !important;
+       }
+       .xs\:ml2 {
+         margin-left: 80px !important;
+       }
+       .xs\:ml6 {
+         margin-left: 160px !important;
+       }
+       .xs\:pt {
+         padding-top: 5px !important;
+         
+       }
+       .xs\:pl {
+         padding-left: 120px !important;
+         
+       }
+       .xs\:pl1 {
+         padding-left: 80px !important;
+         
+       }
+       .xs\:p {
+         padding: 5px !important;
+         
+       }
+       .xs\:mt {
+         margin-top: 20px !important;
+         
+       }
+       .xs\:ml7 {
+         margin-left: 10px !important;
+         
+       }
+       .xs\:pt1 {
+         margin-top: 40px !important;
+         
+       }
+       .xs\:ml1 {
+         margin-left:  5px !important;
+         
+       }
+       .xs\:ml3 {
+         margin-left:  40px !important;
+         
+       }
+       .xs\:ml4 {
+         margin-left:  50px !important;
+         
+       }
+       .xs\:ml5 {
+         margin-left:  0 !important;
+         
+       }
+       .xs\:mr4 {
+         margin-right: 50px !important;
+       }
+       .xs\:mr {
+         margin-right: 3px !important;
+         
+       }
+       .xs\:mr1 {
+         margin-right: 0 !important;
+         
+       }
+       .xs\:f {
+         font-size: 12px !important;
+         
+       }
+       .xs\:w{
+         width: 200px !important;
+         
+       }
+       .xs\:w1{
+         width: 200px !important;
+         
+       }
+       .xs\:w2{
+         width: 470px !important;
+         
+       }
+       .xs\:w3{
+         width: 400px !important;
+         
+       }
+
+     }
+     .he{
+         height: 550px;
+     }
+     .he1{
+         height: 650px;
+     }
+     .mab{
+         margin-bottom: 200px;
+     }
+     .we{
+       width: 295px;
+     }
+     .we1{
+       width: 300px;
+     }
+   </style>
+</head>
+<body class="bg-black m-5  ml-40 pl-10 flex">
+
+  <div class=" flex  p-1 xs:block xs:ma">
+    <div class="bg-center " >
+      <img src="images/img1.png" alt="" class="xs:ma">
+  </div>
+
+  <div class=" bg-gray-200 pr-70 flex-column w-200">
+      <div class="text-center p-10 pb-5 pt-2 ">
+      <ul class="flex List-none pl-10 pr-10">
+          <a href="connection.html" class=" w-60 h-10 p-1 no-underline border border-blue-400 bg-blue-400 rounded   hover:text-white  hover:bg-blue-500 focus:outline-none focus:border-blue-500 transition-color"> <li><span class=" group-hover:text-whitesmoke p-4">se connecter</span></li></a>
+          <a href="monformulaire.html" class="p-1 no-underline border border-gray-300 bg-gray-300 w-60 rounded h-10    hover:text-white hover:bg-blue-500 focus:outline-none focus:border-blue-500 transition-color" >  <li><span class=" group-hover:text-whitesmoke p-4">S'incrire</span></li></a>
+      </ul>
+      </div>
+      <form action="" class="pl-0">
+          <div class="flex pl-0 pb-5 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2  mr-0">
+              
+                  <i class="fa-solid fa-user-plus" ></i>
+              </div>
+          <input type="test" id="test" placeholder="nom utilisateur" class="  w-80 h-14 ">
+            </div>
+            <div class="flex pl-0 pb-3 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+                <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2 ">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+                <input type="password" id="password" placeholder="Mot de passe"   class=" w-80 h-14 ">
+                <div class="bg-white w-14 h-14  text-center  p-2 pl-16"
+                  >
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+
+                
+            </div>
+            
+                <div class="flex  ml-20 ">
+                    <input type="checkbox" id="rememberMe" class="h-5 w-5 text-blue-600 border-gray-300 rounded focus:ring-2 focus:ring-blue-500" />
+                    <label for="rememberMe" class=" text-black">Souviens-toi de moi</label>
+                  </div>
+                  <div class="ml-80 mb-5">
+                <a href=""><Span>mot de passe oublier ?</Span></a>
+            </div>
+        
+      
+
+
+
+            <a href="" class="no-underline "><div class="ml-20 w-70 h-10 bg-blue-500 text-center  border rounded-full p-1 mr-10">
+                <Span class="text-white">SING IN</Span>
+            </div>
+            </a>
+      </form>
+  </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,486 @@
+<!--<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire - Se connecter / S'inscrire</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="/dist/styles.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    .zoom:active {
+      transform: scale(1.2); 
+      transition: transform 0.2s ease-in-out; 
+  }
+     </style>
+</head>
+<body class="bg-black m-5  ml-40 pl-10">
+
+  <div class="flex  p-1">
+    <div class="bg-center" >
+      <img src="images/img1.png" alt="" >
+  </div>
+
+  <div class=" bg-gray-200 pr-70 flex-column w-200">
+      <div class="text-center p-10 pb-5 pt-2 ">
+      <ul class="flex List-none pl-10 pr-10">
+          <a href="connection.html" class=" w-60 h-10 p-1 no-underline border border-gray-300 bg-gray-400  hover:text-white  hover:bg-blue-500 focus:outline-none focus:border-blue-500 transition-colors"> <li><span class="  group-hover:text-whitesmoke p-4">se connecter</span></li></a>
+          <a href="monformulaire.html" class="p-1 pr-8 no-underline border border-blue-400 bg-blue-400 w-60 rounded h-10   hover:text-white hover:bg-blue-500 focus:outline-none focus:border-blue-500 transition-color" >  <li><span class=" group-hover:text-whitesmoke p-4">S'incrire</span></li></a>
+      </ul>
+      </div>
+      <form action="" class="pl-0">
+          <div class="flex pl-0 pb-5 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2  mr-0">
+              
+                  <i class="fa-solid fa-user-plus" ></i>
+              </div>
+          <input type="test" id="test" placeholder="nom utilisateur" class="  w-80 h-14 ">
+            </div>
+      
+
+          <div class="flex pl-0 pb-9 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2 ">
+                  <i class="fa-solid fa-at"></i>
+              </div>
+              <input type="Email" id="Email" placeholder="Email" class=" w-80 h-14 ">
+          </div>
+
+          <div class="flex pl-0 pb-9 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2  ">
+                  <i class="fa-regular fa-user"></i>
+              </div>
+              <input type="test" id="test" placeholder="Nom complet" class=" w-80 h-14 ">
+          </div>
+
+          <div class="flex pl-0 pb-9 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2 ">
+                  <i class="fa-solid fa-phone"></i>
+              </div>
+              <input type="test" id="number" placeholder="Numero de telephone"  class=" w-80 h-14 ">
+          </div>
+
+          <div class="flex pl-0 pb-3 w-100 bg-white h-16 w-90 ml-20 mb-8 mr-20 border border-gray-300 rounded-sm">
+              <div class="border-2 rounded-tl h-16 bg-gray-400 w-40px  text-center p-2 ">
+                  <i class="fa-solid fa-key"></i>
+              </div>
+              <input type="password" id="password" placeholder="....."   class=" w-80 h-14 ">
+              <div class="bg-white w-14 h-14  text-center  p-2 pl-16"
+                >
+                  <i class="fa-solid fa-eye"></i>
+              </div>
+              
+          </div>
+
+      </form>
+
+      <a href="" class="no-underline hover:zoom"> <div class="ml-20 w-70 h-10 bg-blue-500 text-center  border rounded-full p-1 mr-10">
+          <Span class="text-white">S'INSCRIRE</Span>
+      </div></a>
+  
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  </div>
+
+
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>formulaire tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link href="/dist/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200  flex  content-center  justify-center  h-full items-center">
+    <div class="bg-white  shadow-lg  max-w-lg  md:flex">
+        <img class="flex-1 w-full h-40  md:h-full object-cover" src="https://picsum.photos/id/1047/200/300" alt="image">
+    
+        <div class="p-4  flex-1  md:flex md:flex-col justify-center items-center">
+
+            <h1 class="text-2xl  font-bold  text-gray-900  mb-2">connection</h1>
+            <div class="mb-4">
+
+                <label for="username" class="block  text-gray-600 mb-2">Nom utilisateur</label>
+                <input type="text" id="username" name="username" class="focus:shadow-outline border shadow-inner py-2 px-3  text-gray-700 w-full ">
+
+            </div>
+
+            <div class="mb-4">
+
+                <label for="password" class="block  text-gray-600 mb-2">mot de passe</label>
+                <input type="password" id="password" name="password" class="focus:shadow-outline border shadow-inner py-2 px-3  text-gray-700 w-full">
+
+            </div>
+            <button type="submit" class="bg-pink-400 py-2 px-4 rounded-sm hover:bg-pink-600 hover:text-white ">Se connecter</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+---->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind_index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+       .color{
+        background-color:  rgb(48, 46, 46);
+       }
+      
+        /* Définir un breakpoint personnalisé pour les écrans <= 460px */
+        @media (max-width: 594px) {
+          .xs\:hidden {
+            display: none !important;
+          }
+          .xs\:block {
+            display: block !important;
+            
+          }
+          .xs\:ml {
+            margin-left: 190px !important;
+          }
+          .xs\:ml2 {
+            margin-left: 80px !important;
+          }
+          .xs\:ml6 {
+            margin-left: 160px !important;
+          }
+          .xs\:pt {
+            padding-top: 5px !important;
+            
+          }
+          .xs\:pl {
+            padding-left: 120px !important;
+            
+          }
+          .xs\:p {
+            padding: 5px !important;
+            
+          }
+          .xs\:mt {
+            margin-top: 20px !important;
+            
+          }
+          .xs\:ml1 {
+            margin-left:  5px !important;
+            
+          }
+          .xs\:ml3 {
+            margin-left:  40px !important;
+            
+          }
+          .xs\:ml4 {
+            margin-left:  50px !important;
+            
+          }
+          .xs\:ml5 {
+            margin-left:  0 !important;
+            
+          }
+          .xs\:mr4 {
+            margin-right: 50px !important;
+          }
+          .xs\:mr {
+            margin-right: 3px !important;
+            
+          }
+          .xs\:mr1 {
+            margin-right: none !important;
+            
+          }
+          .xs\:f {
+            font-size: 12px !important;
+            
+          }
+          .xs\:w{
+            width: 200px !important;
+            
+          }
+          .xs\:w1{
+            width: 200px !important;
+            
+          }
+          .xs\:w2{
+            width: 470px !important;
+            
+          }
+          .xs\:w3{
+            width: 400px !important;
+            
+          }
+
+        }
+      </style>
+</head>
+<body>
+    <header class="bg-blue-500 flex h-10 border-blue-500">
+        <div class="text-white text-xl ml-10 mr-30 mr-10 xs:hidden ">
+            <p>Bienvenue sur la plateforme tfc canada</p>
+        </div>
+        <div class="flex">
+            <div class="ml-80 mt-1 xs:hidden">
+            <a href="#" class="border-l border-gray-400 p-3 mr-1 text-white text-xs  hover:text-gray-200 transition duration-300 ease-in-out"><i class="fa-solid fa-graduation-cap mr-2"></i><span>FORMATION</span></a>
+            <a href="tarif.html" class="border-l border-gray-400 p-3 mr-1 text-white text-xs  hover:text-gray-200 transition duration-300 ease-in-out" ><i class="fa-regular fa-credit-card  mr-2"></i><span>TARIF</span></a>
+            <a href="#" class="border-l border-gray-400 p-3 mr-1 text-white text-xs  hover:text-gray-200 transition duration-300 ease-in-out"><i class="fa-solid fa-headset  mr-2"></i></span>CONTACTEZ-NOUS</span></a>
+            </div>
+            <div class="text-white ml-10 p-1 xs:ml">
+            <a href="#" class="mr-2"><i class="fa-brands fa-facebook  hover:text-gray-200 transition duration-300 ease-in-out"></i></a></li>
+            <a href="#" class="mr-2"><i class="fa-brands fa-instagram  hover:text-gray-200 transition duration-300 ease-in-out"></i></a></li>
+            <a href="#" class="mr-2"><i class="fa-brands fa-youtube  hover:text-gray-200 transition duration-300 ease-in-out"></i></a></li>
+            <a href="#" class="mr-2"><i class="fa-brands fa-whatsapp  hover:text-gray-200 transition duration-300 ease-in-out"></i></a></li>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="flex">
+
+          <div class="sm:hidden mt-3 ml-3">
+            <label for="" class="font-bold "><i class="fas fa-bars mr-3  group relative"></i></label>
+            <input type="checkbox" name="" id="" class="hidden">
+                <div class="hidden group-hover:block absolute left-0 mt-2 w-80 h-49 bg-white shadow-lg border rounded-md ">
+                <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500 "><i class="fa-regular fa-pen-to-square mr-2"></i><span>EXPRESSION ECRITE</span> </a>             
+                <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500"><i class="fa-solid fa-people-arrows mr-2"></i><span>EXPRESSION ORALE</span></a>
+              
+            </div>
+
+          </div>
+
+          
+
+
+
+
+
+
+
+            <div class="ml-10 mr-20 xs:ml ">
+                <a href="#"><img src="images/img2.png" alt=""></a>
+            </div>
+
+            <div class="sm:hidden flex ">
+              <button class="font-bold ">
+                <i class="fas fa-search mt-2 mr-5"></i>
+              </button>
+              <input type="search" placeholder="Rechercher..." class="bg-gray-200 py-2 px-4 rounded w-20 h-10 mt-3" >
+              
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="mt-3  flex xs:hidden">
+                <div class="group relative ">
+                <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500 "><i class="fa-regular fa-pen-to-square mr-2"></i><span>EXPRESSION ECRITE</span> </a>
+                <div class="hidden group-hover:block absolute  mt-2 w-80 h-49 bg-white shadow-lg border rounded-md">
+                  <ul>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-regular fa-newspaper mr-1 mt-1"></i><p class="block ml-2">les sujets d'actualites</p></a></li>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-book-open mr-1 mt-1"></i><p class="block ml-2">Methodologie</p></a></li>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-check mr-1 mt-1"></i> <p class="block ml-2">correction des sujet d'expression Ecrite</p></a></li>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-folder-open mr-1 mt-1"></i><p class="block ml-2">plate-forme de redaction</p></a></li>
+                  </ul>
+                </div>
+                </div>
+                 
+                <div class="group relative ">              
+                <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500"><i class="fa-solid fa-people-arrows mr-2"></i><span>EXPRESSION ORALE</span></a>
+                <div class="hidden group-hover:block absolute left-0 mt-2 w-80 h-49 bg-white shadow-lg border rounded-md">
+                    <ul>
+                      <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-regular fa-newspaper mr-1 mt-1"></i><p class="block ml-2">les sujets d'actualites</p></a></li>
+                      <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-book-open mr-1 mt-1"></i><p class="block ml-2">Methodologie</p></a></li>
+                      <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-book-open mr-1 mt-1"></i><p class="block ml-2">correction des sujets</p></a></l>
+                    </ul>
+                  </div>
+                  </div>
+                                    <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500 mt-1"><i class="fa-solid fa-book-open-reader mr-2"></i><span>COMPREHENSION ECRITE</span></a>
+                                    <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500 mt-1"><i class="fa-solid fa-headphones mr-2"></i><span>COMPREHENSION ORALE</span></a>
+
+                                    <div class="group relative "> 
+                                    <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500"><i class="fa-solid fa-user mr-2"></i><span>BONJOUR,MAEVA EWOLO </span></a>
+                                    <div class="hidden group-hover:block absolute left-0 mt-2 w-80 h-49 bg-white shadow-lg border rounded-md">
+                                        <ul>
+                                          <li><a href="#" class="block px-4 py-2 text-gray-200 hover:text-blue-300">les series de comprehension</a></li>
+                                        </ul>
+                                      </div>
+                                      </div>
+                                    <a href="#" class="text-xs mr-2 font-bold  hover:text-blue-500 mt-1"><i class="fa-solid fa-right-from-bracket mr-2"></i><span>SE DECONNECTER</span></a>
+                                
+            </div>
+        </div>
+
+
+
+        <div class="mt-2 ">
+                <div class="ml-20 text-white bg-gradient-to-r from-blue-400 to-purple-400  mr-20 h-40 xs:mr1 xs:w2 xs:ml1">
+                    <div class="ml-10 pt-10 xs:pt">
+                    <p class="text-2xl">Bonjour 698211245 Maeva Ewolo</p>
+                    <P class="text-1xl ml-20"> Membre depuis 3, decembre 2024</P><a href="#"><i class="fa-solid fa-camera text-black text-lg"></i></a>
+                    </div>
+                    
+                </div>
+                
+        </div>
+
+
+        <div class=" color  mr-20 xs:ml1 xs:w2 xs:mr1 ml-20 h-9 ">
+            <ul class="flex ml-10 ">
+                <div class="hover:bg-black ">
+                <li class="  mt-2 mr-10 "><a href="#" class="text-white text-sm xs:f"><i class="fa-solid fa-house-chimney mr-2 xs:mr1"></i><span>Bienvenue</span></a></li>
+                </div>
+                <div class="hover:bg-black">
+                <li class=" mt-2 mr-10"><a href="#" class="text-white text-sm "><i class="fa-solid fa-user mr-2"></i><span>Profil Details</span></a></li>
+                 </div>
+                 <div class="hover:bg-black">
+                <li class=" mt-2 mr-10"><a href="#" class="text-white text-sm "><i class="fa-solid fa-bullhorn mr-2"></i><span>Suscription</span></a></li>
+                </div>
+                <div class="hover:bg-black">
+                <li class=" mt-2 mr-10"><a href="#" class="text-white text-sm "><i class="fa-solid fa-money-bill-1 mr-2"></i><span>Orders</span></a></li>
+                 </div>
+                 <div class="hover:bg-black">
+                <li class=" mt-2 mr-10 xs-w"><a href="#" class="text-white text-sm "><i class="fa-solid fa-right-from-bracket mr-1"></i><span>LogOut</span></a></li>
+                </div>
+                
+            </ul>
+        </div>
+
+
+        <div class="ml-80 mt-10 xs:ml6">
+            <h1 class="text-4xl font-bold ml-60 xs:ml5">Bienvenue</h1>
+        </div>
+
+        <div class="ml-80 xs:ml4 bg-blue-500 xs:pl mr-60 xs:mr1 xs:w3 mt-10 border-5xl border-gray-400 rounded-3xl h-10  transform transition-transform duration-300 hover:scale-110">
+            <button class="ml-80 xs:ml2 xs:ml3 mt-2 text-white">S'entrainer</button>
+        </div>
+
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="bg-blue-500 mt-20 pt-10 pb-20 flex  h-100 mb-20 xs:block">
+            <div class="block">
+                <ul class="block text-white  ml-20 ">
+                    <li class="text-2xl mb-10 ">les pages</li>
+                    <li class="border-b border-white w-60 h-10 font-light"><a href="#" class=""><i class="fa-solid fa-house-chimney mr-3"></i><span >Page d'acceil</span></a></li>
+                    <li class="border-b border-white w-60 h-10 font-light"><a href="#" class=""><i class="fa-solid fa-book-open mr-3"></i><span class="">Comprehension Ecrite</span></a></li>
+                    <li class="border-b border-white w-60 h-10 font-light"><a href="#" class=""><i class="fa-solid fa-headphones mr-3"></i><span>Comprehension Orale</span></a></li>
+                    <li class="border-b border-white w-60 h-10 font-light"><a href="#" class=""><i class="fa-regular fa-pen-to-square mr-3"></i><span>Expression Ecrite</span></a></li>
+                    <li class="border-b border-white w-60 h-10 font-light"><a href="#" class=""><i class="fa-solid fa-people-arrows mr-3"></i><span>Expression Orale</span></a></li>
+                    <li class=" w-60 font-light"><a href="#" class=""><i class="fa-solid fa-scale-balanced mr-3"></i><span>Politique de retour et de remboursement</span></a></li>
+                </ul>
+            </div>
+            <div class="block">
+                <ul class="block text-white  ml-10 xs:ml2">
+                    <li class="border-b border-white w-60 h-10 font-light"><a href="#"><i class="fa-solid fa-gavel"></i><span>Politique de confidentialite</span></a></li>
+                    <li class="border-b border-white w-60 h-10 font-light"><a href="#"><i class="fa-solid fa-blog"></i><span>Blog</span></a></li>
+                     <li class="pb-10 text-2xl"><p class="pt-10">parametre du compte</p></li>
+                
+                    <div class="bg-blue-600 border rounded-lg  border-blue-600  xs:w">
+                    <li class="font-light p-5 hover:bg-white hover:text-black"><a href=""><i class="fa-solid fa-user mr-3"></i><span>mon compte</span></a></li>
+                    <li class="font-light p-5 hover:bg-white hover:text-black"><a href="monformulaire.html"><i class="fa-solid fa-right-from-bracket mr-3"></i><span>Se deconnecter</span></a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="block w-80 xs:ml3">
+                <p class="ml-10 text-white text-2xl xs:mt">nos reseaux sociaux</p>
+                    <ul class="flex ml-10 p-5">
+                        <div class="bg-red-600 border rounded-xl mr-2">
+                        <li ><a href="#" class="text-white p-2"><i class="fa-brands fa-youtube"></i></a></li>
+                        </div>
+                        <div class="bg-blue-700 border rounded-xl mr-2">
+                        <li><a href="#" class="text-white p-2"><i class="fa-brands fa-facebook"></i></a></li>
+                         </div>
+                         <div class="bg-green-600 border rounded-xl mr-2">
+                        <li><a href="#" class="text-white p-2"><i class="fa-brands fa-whatsapp"></i></a></li>
+                         </div>
+                         <div class="bg-pink-600 border rounded-xl">
+                        <li><a href="#" class="text-white p-2"><i class="fa-brands fa-instagram"></i></a></li>
+                        </div>
+                    </ul>
+                    <p class="ml-10 text-white text-2xl ">A proppos de nous</p>
+                    <p class="ml-10 text-white font-light">Plate-forme dédiée à la préparation au TCF Canada avec des tests en conditions réelles.</p>
+            </div>
+
+                <div class="block ml-10">
+
+                 <div class="text-2xl text-white ml-10 pb-10 xs:mt">
+                  Nous acceptons</div>
+                <div class="block bg-white  w-60 p-5 h-60 border rounded-lg xs:ml3">
+
+                  <div class="flex">
+                    <a  href="#"><img src="images/img4.png" alt=""></a>
+                   <a href="#"><img src="images/img5.png" alt=""></a>
+                  </div>
+                <div class="flex">
+                    <a  href="#"><img src="images/img6.png" alt=""></a>
+                   <a href="#"><img src="images/img7.png" alt=""></a>
+                </div>
+            </div>
+
+                <div class="bg-gray-200 text-black border  rounded-3xl mt-10 pl-20 xs:w1 xs:p transform transition-transform duration-300 transform hover:scale-95 xs:ml3">
+                    <button class="p-3 xs:ml3">cliquez-ici</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+
+
+    </footer>
+</body>
+</html>
