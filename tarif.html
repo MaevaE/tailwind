@@ -127,6 +127,12 @@
         .we1{
           width: 300px;
         }
+        .position{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+         }
       </style>
 </head>
 <body>
@@ -153,18 +159,101 @@
 
 
     <main>
-        <div class="flex">
+        <div class="flex position">
 
-          <div class="sm:hidden mt-3 ml-3">
-            <label for="" class="font-bold "><i class="fas fa-bars mr-3  group relative"></i></label>
-            <input type="checkbox" name="" id="" class="hidden">
-                <div class="hidden group-hover:block absolute left-0 mt-2 w-80 h-49 bg-white shadow-lg border rounded-md ">
-                <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500 "><i class="fa-regular fa-pen-to-square mr-2"></i><span>EXPRESSION ECRITE</span> </a>             
+          <div class="sm:hidden mt-3 ml-3 flex items-center relative " >
+            <div class="relative group bg-transparent p-3 ">
+              <button class="btn bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-300 transition duration-200 menu-toggle"><i class="fa-solid fa-bars"></i></button>
+              <div class="mt-3  block hidden absolute top-full left-0 bg-white w-60 pl-5 border border-gray-400 rounded" id="menu">
+                <div class="group relative mb-4 ">
+                <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-300 "><i class="fa-regular fa-pen-to-square mr-2"></i><span>EXPRESSION ECRITE</span> </a>
+                <div class="hidden group-hover:block absolute  mt-2 w-80 h-49 bg-white shadow-lg border rounded-md">
+                  <ul>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-regular fa-newspaper mr-1 mt-1"></i><p class="block ml-2">les sujets d'actualites</p></a></li>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-book-open mr-1 mt-1"></i><p class="block ml-2">Methodologie</p></a></li>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-check mr-1 mt-1"></i> <p class="block ml-2">correction des sujet d'expression Ecrite</p></a></li>
+                    <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-folder-open mr-1 mt-1"></i><p class="block ml-2">plate-forme de redaction</p></a></li>
+                  </ul>
+                </div>
+                </div>
+                 
+                <div class="group relative mb-4">              
                 <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500"><i class="fa-solid fa-people-arrows mr-2"></i><span>EXPRESSION ORALE</span></a>
-              
+                <div class="hidden group-hover:block absolute left-0 mt-2 w-80 h-49 bg-white shadow-lg border rounded-md">
+                    <ul>
+                      <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-regular fa-newspaper mr-1 mt-1"></i><p class="block ml-2">les sujets d'actualites</p></a></li>
+                      <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-book-open mr-1 mt-1"></i><p class="block ml-2">Methodologie</p></a></li>
+                      <li><a href="#" class="flex px-4 py-2 text-blue-500 hover:text-blue-300"><i class="fa-solid fa-book-open mr-1 mt-1"></i><p class="block ml-2">correction des sujets</p></a></l>
+                    </ul>
+                  </div>
+                  </div>
+                                    <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500 mt-1 mb-4 flex"><i class="fa-solid fa-book-open-reader mr-2"></i><span>COMPREHENSION ECRITE</span></a>
+                                    <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500 mt-1 flex mb-4"><i class="fa-solid fa-headphones mr-2"></i><span>COMPREHENSION ORALE</span></a>
+
+                                    <div class="group relative mb-4"> 
+                                    <a href="#" class="text-xs mr-5 font-bold  hover:text-blue-500"><i class="fa-solid fa-user mr-2"></i><span>BONJOUR,MAEVA EWOLO </span></a>
+                                    <div class="hidden group-hover:block absolute left-0 mt-2 w-80 h-49 bg-white shadow-lg border rounded-md">
+                                        <ul>
+                                          <li><a href="#" class="block px-4 py-2 text-gray-200 hover:text-blue-300">les series de comprehension</a></li>
+                                        </ul>
+                                      </div>
+                                      </div>
+                                    <a href="#" class="text-xs mr-2 font-bold  hover:text-blue-500 mt-1"><i class="fa-solid fa-right-from-bracket mr-2"></i><span>SE DECONNECTER</span></a>
+                                
             </div>
+          </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             <div class="ml-10 mr-20 xs:ml ">
@@ -442,7 +531,16 @@
 
     </footer>
 
+    <script>
+      const menubouton = document.querySelector('button');
+      const menu = document.querySelector('#menu');
 
+      menubouton.addEventListener('click', () =>{
+        menu.classList.toggle('hidden');
+      })
+
+        
+  </script>
 
 </body>
 </html>
